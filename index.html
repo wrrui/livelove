@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love Christine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffeef8 100%);
+            overflow-x: hidden;
+        }
+        
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .heart {
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .flower {
+            position: absolute;
+            opacity: 0.7;
+            animation: float 10s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .message-box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .message-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-romantic {
+            background: linear-gradient(45deg, #ff6b8b, #ff8e53);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-romantic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 139, 0.4);
+        }
+        
+        .polaroid {
+            background: white;
+            padding: 15px 15px 60px 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
+        }
+        
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        .polaroid-caption {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <!-- Floating flowers -->
+    <div class="flower text-pink-300 text-4xl" style="top: 10%; left: 5%;">🌸</div>
+    <div class="flower text-red-300 text-3xl" style="top: 20%; right: 8%;">🌹</div>
+    <div class="flower text-purple-300 text-5xl" style="bottom: 15%; left: 7%;">🌷</div>
+    <div class="flower text-rose-200 text-4xl" style="bottom: 25%; right: 5%;">💮</div>
+    <div class="flower text-pink-200 text-3xl" style="top: 30%; left: 15%;">🏵️</div>
+    
+    <main class="z-10 w-full max-w-4xl text-center">
+        <div class="heart text-red-500 text-6xl mb-6">
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        <h1 class="dancing-script text-5xl md:text-7xl font-bold text-pink-600 mb-6">
+            I Love You, Christine
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-700 mb-10">
+            Every moment with you is a beautiful chapter in our love story
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="message-box p-6 rounded-lg">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="dancing-script text-2xl text-pink-600 mb-2">My Sunshine</h3>
+                <p class="text-gray-700">You light up my world brighter than the sun ever could.</p>
+            </div>
+            
+            <div class="message-box p-6 rounded-lg">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <h3 class="dancing-script text-2xl text-pink-600 mb-2">My Peace</h3>
+                <p class="text-gray-700">In your arms is where I find my calm and comfort.</p>
+            </div>
+            
+            <div class="message-box p-6 rounded-lg">
+                <div class="text-pink-500 text-3xl mb-4">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="dancing-script text-2xl text-pink-600 mb-2">My Everything</h3>
+                <p class="text-gray-700">You complete me in ways I never knew possible.</p>
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap justify-center gap-8 mb-12">
+            <div class="polaroid">
+                <div class="w-40 h-40 bg-pink-100 rounded flex items-center justify-center">
+                    <i class="fas fa-heart text-red-400 text-5xl"></i>
+                </div>
+                <div class="polaroid-caption">Our Love</div>
+            </div>
+            <div class="polaroid">
+                <div class="w-40 h-40 bg-blue-100 rounded flex items-center justify-center">
+                    <i class="fas fa-kiss-wink-heart text-pink-500 text-5xl"></i>
+                </div>
+                <div class="polaroid-caption">Your Smile</div>
+            </div>
+            <div class="polaroid">
+                <div class="w-40 h-40 bg-purple-100 rounded flex items-center justify-center">
+                    <i class="fas fa-hand-holding-heart text-purple-500 text-5xl"></i>
+                </div>
+                <div class="polaroid-caption">Our Future</div>
+            </div>
+        </div>
+        
+        <button class="btn-romantic text-white px-8 py-3 rounded-full text-lg font-semibold mb-12">
+            <i class="fas fa-paper-plane mr-2"></i> Send My Love
+        </button>
+        
+        <div class="bg-white bg-opacity-80 rounded-xl p-8 max-w-2xl mx-auto">
+            <h2 class="dancing-script text-3xl md:text-4xl text-pink-600 mb-4">To My Dearest Christine</h2>
+            <p class="text-gray-700 mb-4">
+                From the moment our paths crossed, my life changed in the most beautiful way. 
+                Your love is the melody that plays in my heart every single day.
+            </p>
+            <p class="text-gray-700 mb-4">
+                I cherish your laughter, your kindness, and the way you make even ordinary 
+                moments feel extraordinary. With you, I've found a love that's patient, 
+                kind, and endlessly beautiful.
+            </p>
+            <p class="text-gray-700">
+                No matter where life takes us, know that my love for you will only grow 
+                stronger with each passing day. You are, and always will be, my forever love.
+            </p>
+            <div class="mt-6 flex justify-center">
+                <span class="dancing-script text-2xl text-pink-600">Forever Yours</span>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mt-16 mb-8 text-center text-gray-600 text-sm">
+        <p>Made with <i class="fas fa-heart text-red-400"></i> for the most wonderful woman in the world</p>
+        <p class="mt-2">© <span id="year"></span> My Heart Belongs to Christine</p>
+    </footer>
+    
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Create more floating flowers
+        function createFlowers() {
+            const flowerEmojis = ['🌸', '🌹', '🌷', '🌺', '💐', '🏵️', '💮'];
+            const colors = ['text-pink-200', 'text-red-200', 'text-purple-200', 'text-rose-200'];
+            
+            for (let i = 0; i < 10; i++) {
+                const flower = document.createElement('div');
+                flower.className = `flower ${colors[Math.floor(Math.random() * colors.length)]} text-${Math.floor(Math.random() * 3) + 2}xl`;
+                flower.style.left = `${Math.random() * 100}%`;
+                flower.style.top = `${Math.random() * 100}%`;
+                flower.style.animationDuration = `${5 + Math.random() * 10}s`;
+                flower.style.animationDelay = `${Math.random() * 5}s`;
+                flower.textContent = flowerEmojis[Math.floor(Math.random() * flowerEmojis.length)];
+                document.body.appendChild(flower);
+            }
+        }
+        
+        // Animate the "Send My Love" button
+        document.querySelector('.btn-romantic').addEventListener('click', function() {
+            const hearts = document.createElement('div');
+            hearts.className = 'fixed inset-0 flex items-center justify-center pointer-events-none z-50';
+            hearts.innerHTML = `
+                <div class="heart text-red-500 text-6xl absolute animate-ping" style="animation-duration: 1s;">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="heart text-pink-500 text-8xl absolute animate-ping" style="animation-duration: 1.5s; animation-delay: 0.2s;">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="heart text-rose-400 text-5xl absolute animate-ping" style="animation-duration: 1.2s; animation-delay: 0.4s;">
+                    <i class="fas fa-heart"></i>
+                </div>
+            `;
+            document.body.appendChild(hearts);
+            
+            setTimeout(() => {
+                hearts.remove();
+                alert("My love is on its way to you, Christine! 💌");
+            }, 1500);
+        });
+        
+        // Initialize flowers when page loads
+        window.addEventListener('load', createFlowers);
+    </script>
+</body>
+</html>
